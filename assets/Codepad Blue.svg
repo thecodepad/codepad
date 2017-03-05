@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220px" height="220px" viewBox="0 0 220 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Codepad Blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF057C" offset="0%"></stop>
+            <stop stop-color="#7C64D5" offset="47.8728925%"></stop>
+            <stop stop-color="#4CC3FF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="2" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.478431373   0 0 0 0 0.541176471   0 0 0 0 0.6  0 0 0 0.198567708 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="3.22265625%" y1="50%" x2="71.5530192%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#E4EFE9" offset="0%"></stop>
+            <stop stop-color="#93A5CF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="0" y="0" width="200" height="200" rx="100"></rect>
+        <rect id="path-6" x="0" y="0" width="200" height="100"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-142.000000, -94.000000)">
+            <g id="Codepad-Blue" transform="translate(150.000000, 100.000000)">
+                <g id="Rectangle-2" filter="url(#filter-2)">
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+                    <g id="Oval-+-Oval-Copy-Mask" opacity="0.900000036" mask="url(#mask-5)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Mask" fill="#29303A" xlink:href="#path-6"></use>
+                        <circle id="Oval" fill="#D8D8D8" opacity="0.200000003" mask="url(#mask-7)" cx="100.277832" cy="100.277832" r="33.277832"></circle>
+                        <circle id="Oval-Copy" fill="#D8D8D8" opacity="0.100000001" mask="url(#mask-7)" cx="99.5556641" cy="99.5556641" r="66.5556641"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
