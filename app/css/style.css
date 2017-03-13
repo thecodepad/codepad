@@ -1,0 +1,265 @@
+body {
+  border: 0;
+  font-size: 14px;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+
+/*Menubar styles begin here*/
+
+#menu-bar {
+  -webkit-app-region: drag;
+  background-color: #101216;
+  height: 32px;
+}
+
+#menu-bar a::selection {
+  background: transparent;
+}
+
+#menu-items ul {
+  -webkit-app-region: no-drag;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+}
+
+a.menu-item {
+  color: #C0C5CE;
+}
+
+a.menu-item:hover {
+  cursor: default;
+}
+
+#menu-items ul a {
+  display: block;
+  font-family: 'Segoe UI Semibold', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  outline: none;
+  padding: 0 12px;
+  text-decoration: none;
+}
+
+#menu-items ul li:hover {
+  background: #EEEEEE;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul:hover {
+  cursor: default;
+}
+
+li a,
+.menu-item {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .menu-item {
+  background-color: #303238;
+}
+
+li.dropdown {
+  display: inline-block;
+  z-index: 9999;
+}
+
+.dropdown-content {
+  z-index: 9999;
+  display: none;
+  position: absolute;
+  background-color: #FDFDFD;
+  border-radius: 0 0 2px 2px;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #F1F1F1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.disabled {
+  opacity: 0.4;
+}
+
+.shortcut {
+  float: right;
+  opacity: 0.5;
+}
+
+.status {
+  border-radius: 200px;
+  background: linear-gradient(#00D89F, #09E17B);
+  opacity: 0;
+  float: right;
+  height: 10px;
+  margin: 11px 2px;
+  width: 10px;
+}
+
+.status-active {
+  opacity: 1
+}
+
+#codepad-center {
+  position: absolute;
+  color: #EAEAEA;
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 32px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translateX(-50%);
+}
+
+#codepad-center::selection {
+  background: transparent;
+}
+
+#window-control {
+  float: right;
+  height: 32px;
+  margin-right: 10px;
+}
+
+#window-control::selection {
+  background: transparent;
+}
+
+.buttons {
+  -webkit-app-region: no-drag;
+  border-radius: 200px;
+  display: inline-block;
+  height: 12px;
+  margin: 10px 2px;
+  transition: 0.08s ease-out;
+  width: 12px;
+}
+
+.buttons:hover {
+  border-radius: 200px;
+  cursor: pointer;
+  height: 16px;
+  margin: 8px 0px;
+  width: 16px;
+}
+
+#max-button {
+  background: linear-gradient(#00D89F, #09E17B);
+}
+
+#min-button {
+  background: linear-gradient(#FFE066, #F0C808);
+}
+
+#close-button {
+  background: linear-gradient(#F88734, #FD6A51);
+}
+
+
+/* Menubar style ends */
+
+
+/* editor: The container holding HTML/CSS/JS editors */
+
+#editor {
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-bottom: 2px solid #121418;
+}
+
+.editor-item {
+  border-right: 2px solid #121418;
+  height: 50%;
+  min-width: 33.28%;
+  width: auto;
+}
+
+
+/* No border-right for JS editor*/
+
+.editor-item:last-child {
+  border-right: 0;
+}
+
+.editor-label {
+  background-color: #232831;
+  color: #EAEAEA;
+  font-family: 'Segoe UI Semibold', Tahoma, Geneva, Verdana, sans-serif;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  /*padding-right: 5px;*/
+}
+
+.editor-focus {
+  box-shadow: inset 0 2px 0 0 #8A99BB;
+}
+
+.editor-label:hover {
+  cursor: default;
+}
+
+.editor-label::selection {
+  background: transparent;
+}
+
+.editor-item:hover {
+  cursor: text;
+}
+
+
+/* result-viewport: The container holding iframe element */
+
+#result-viewport {
+  height: calc(100% - 384px);
+  border: 0;
+  margin: 0;
+  background: white;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+/* output: iframe element*/
+
+#output {
+  border: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
